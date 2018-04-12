@@ -10,7 +10,7 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
@@ -28,6 +28,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the scene to the view
         sceneView.scene = scene
+        
+        // Register tap gesture
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
+        tapGesture.delegate = self
+        sceneView.addGestureRecognizer(tapGesture)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,4 +82,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
     }
+    
+    // MARK: - Gestures
+    
+    var shipHighlighted = false
+    
+    @objc
+    func didTap(_ gesture: UITapGestureRecognizer) {
+        if let shipNode = sceneView.scene.rootNode.childNodes.first {
+            if shipHighlighted {
+                shipNode.dehighlight()
+            }
+            else {
+                shipNode.highlight()
+            }
+            shipHighlighted = !shipHighlighted
+        }
+    }
+
 }

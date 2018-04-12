@@ -13,6 +13,7 @@
 		5D85BAD8207E3790008B01BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D85BAD6207E3790008B01BF /* Main.storyboard */; };
 		5D85BADA207E3791008B01BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D85BAD9207E3791008B01BF /* Assets.xcassets */; };
 		5D85BADD207E3791008B01BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D85BADB207E3791008B01BF /* LaunchScreen.storyboard */; };
+		5D85BAE5207E37D1008B01BF /* SCNNode+Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D85BAE4207E37D1008B01BF /* SCNNode+Highlight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5D85BAD9207E3791008B01BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D85BADC207E3791008B01BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D85BADE207E3791008B01BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D85BAE4207E37D1008B01BF /* SCNNode+Highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Highlight.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				5D85BAD0207E3790008B01BF /* AppDelegate.swift */,
 				5D85BAD2207E3790008B01BF /* art.scnassets */,
 				5D85BAD4207E3790008B01BF /* ViewController.swift */,
+				5D85BAE4207E37D1008B01BF /* SCNNode+Highlight.swift */,
 				5D85BAD6207E3790008B01BF /* Main.storyboard */,
 				5D85BAD9207E3791008B01BF /* Assets.xcassets */,
 				5D85BADB207E3791008B01BF /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D85BAD5207E3790008B01BF /* ViewController.swift in Sources */,
+				5D85BAE5207E37D1008B01BF /* SCNNode+Highlight.swift in Sources */,
 				5D85BAD1207E3790008B01BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
